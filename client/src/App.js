@@ -1,13 +1,13 @@
-import { Route, Routes } from "react-router-dom";
+//import { Route, Routes } from "react-router-dom";
 
 import About from "./pages/About";
-import Home from "./pages/Home";
+import RegistrationForm from "./components/RegistrationForm";
 
 const App = () => (
-	<Routes>
-		<Route path="/" element={<Home />} />
-		<Route path="/about/this/site" element={<About />} />
-	</Routes>
+	<div>
+		<About />
+		<RegistrationForm />
+	</div>
 );
 
 export default App;
