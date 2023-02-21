@@ -1,29 +1,14 @@
-import React from "react";
-// import Navbar from "./components/Navbar";
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Card from "./pages/Cards";
-import Gameboard from "./pages/Gameboard";
-import Home from "./pages/Home";
+import { Route, Routes } from "react-router-dom";
+
 import About from "./pages/About";
+import Home from "./pages/Home";
 
-
-// import Card
-// import Home from "./components/pages/Home";
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import About from "./components/pages/About";
-// import ContactUs from "./components/pages/ContactUs";
-// import Navbar from "./components/navbar/Navbar";
-// import "./App.css";
-// import Signup from "./components/Signup";
-
-function App() {
-	return (
-		<Router>
-			<Navbar />
-			<Card />
-		</Router>
-	);
+const App = () => ({
+	<Routes>
+		<Route path="/" element={<Home />} />
+		<Route path="/about/this/site" element={<About />} />
+	</Routes>
+);
 
 }
 
