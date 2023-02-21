@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.nav-bar{
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 75px;
+background-color: #00828c;
+color: white;
+}
+
+.logo{
+    font-size: 30px;
+
+}
+
+.nav-links{
+display: flex;
+justify-content: flex-end;
+list-style: none;
+width: 75%;
+
+}
+
+.home,
+.about,
+.contact,
+.Login,
+.signup{
+text-decoration: none;
+color: white;
+font-size: 20px;
+padding: 10px 20px;
+margin: 0 10px;
+cursor: pointer;
+}
+
+.signup{
+    border: 1px solid rgb(224, 224, 158);
+    border-radius: 5px;
+}
+
+.mobile-menu-icon{
+
+    display: none;
+
+}
+
+@media screen and {max-width: 780px} {
+    .log{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 25px;
+        
+    }
+    
+}
