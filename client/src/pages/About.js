@@ -1,8 +1,8 @@
 const About = () => (
 	<main role="main">
 		<div>
-			
-			
+
+
 		</div>
 	</main>
 );

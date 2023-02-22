@@ -9,7 +9,7 @@ import { Grid } from "@mui/material";
 import "./card.css";
 
 export default function MediaCard() {
-  return (
+	return (
 		<Grid container className="card-container">
 			<Grid item xs={4} sm={4} md={4}>
 				<paper>
@@ -24,8 +24,10 @@ export default function MediaCard() {
 								Mentors
 							</Typography>
 							<Typography variant="body2" color="text.secondary">
-								Mentor are here to give advise to student any other persons,
-								requiring help.
+								Mentor will be able give advise to students and can also will
+								be able to create quiz and edit quiz. mentors can also help student.
+
+
 							</Typography>
 						</CardContent>
 						<CardActions>
@@ -88,4 +90,3 @@ export default function MediaCard() {
 		</Grid>
 	);
 }
-

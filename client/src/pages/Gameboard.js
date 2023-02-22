@@ -57,7 +57,7 @@ function Gameboard() {
 				</div>
 			</div>
 
-			<Button onClick={()=>setQuestionNumber(questionNumber+1)} color="primary" variant="outlined">
+			<Button className="bt" onClick={()=>setQuestionNumber(questionNumber+1)} color="primary" variant="success">
 				Next
 			</Button>
 		</div>
