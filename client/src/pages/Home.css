@@ -9,3 +9,10 @@
 .message:hover {
 	background-color: yellow;
 }
+
+.home{
+	min-height: 98.5vh;
+	border: inherit;
+	border: 8px;
+	
+}

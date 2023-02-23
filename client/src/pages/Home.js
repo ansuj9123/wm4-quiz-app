@@ -1,12 +1,13 @@
 
 import Cards from "./Cards";
 import React from "react";
+import Sidebar from "./Sidebar";
 
 function Home() {
   return (
-    <div>
+    <div className="home">
     <Cards />
-  
+    <Sidebar />
     </div>
   );
 }
