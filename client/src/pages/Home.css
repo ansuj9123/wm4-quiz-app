@@ -9,3 +9,16 @@
 .message:hover {
 	background-color: yellow;
 }
+
+.question-container{
+display: flex;
+}
+
+
+
+.create-quiz{
+
+}
+.edit-quiz{
+
+}
