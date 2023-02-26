@@ -3,7 +3,7 @@
 border: 1px solid black;
 margin-top: 100px;
 padding: 50px;
-background-color: rgb(177, 134, 218);
+background-color: #101f33;
 }
 
 .question-container{
@@ -29,3 +29,4 @@ display: flex;
 gap: 10px;
 align-items: center;
 }
+

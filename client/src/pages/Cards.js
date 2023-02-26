@@ -5,6 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { Link } from "react-router-dom";
 import { Grid } from "@mui/material";
 import "./card.css";
 
@@ -31,7 +32,7 @@ export default function MediaCard() {
 						</CardContent>
 						<CardActions>
 							<Button size="small">Share</Button>
-							<Button size="small">Login in</Button>
+							<Link to="/Login" className="link">Login in</Link>
 						</CardActions>
 					</Card>
 				</paper>
@@ -56,7 +57,7 @@ export default function MediaCard() {
 						</CardContent>
 						<CardActions>
 							<Button size="small">Share</Button>
-							<Button size="small">Login in</Button>
+							<Link  to="/Login" size="small" className="link">Login in</Link>
 						</CardActions>
 					</Card>
 				</paper>
@@ -81,7 +82,7 @@ export default function MediaCard() {
 						</CardContent>
 						<CardActions>
 							<Button size="small">Share</Button>
-							<Button size="small">Login in</Button>
+							<Link to="/Login"  size="small" className="link">Login in</Link>
 						</CardActions>
 					</Card>
 				</paper>

@@ -8,3 +8,13 @@
 .grid-item{
     background-color: #eaeff1;
 }
+
+.link{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: black;
+    background-color: #101f33;
+    text-decoration: none;
+    color: white;
+}

@@ -1,15 +1,22 @@
 import React from "react";
-import "./Home.css";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+import { useNavigate } from "react-router-dom";
 
 function TeacherCreateQuiz() {
-  return (
-		<div className="question-container">
-			<div className="create-quiz">
-				<button className="create-quiz">Create Quiz</button>
-			</div>
 
-			<div className="edit-quiz">Edit Quiz</div>
-		</div>
+	const navigate = useNavigate();
+
+  return (
+		<Stack spacing={6} direction="column">
+			<Button href="/Gameboard" className="contained-btn" variant="contained">
+				Create Quiz
+			</Button>
+			<Button className="outlined-btn" variant="contained">
+				Edit Quiz
+			</Button>
+
+		</Stack>
 	);
 }
 
