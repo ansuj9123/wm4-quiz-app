@@ -116,14 +116,14 @@ export default function SignInSide() {
 								control={<Checkbox value="remember" color="primary" />}
 								label="Remember me"
 							/>
-							<Button
-								type="submit"
+							<Link to="/Quizzes"
+
 								fullWidth
 								variant="contained"
 								sx={{ mt: 3, mb: 2 }}
-							onClick={(e)=>handleSubmit(e)} >
+							>
 								Sign In
-							</Button>
+							</Link>
 							<Grid container>
 								<Grid item xs>
 									<Link href="#" variant="body2">

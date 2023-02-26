@@ -1,6 +1,7 @@
 import { Router } from "express";
 
 import logger from "./utils/logger";
+import { handleSignUp } from "./controllers/SignUp";
 
 const router = Router();
 
@@ -12,9 +13,7 @@ router.get("/", (_, res) => {
 /**
  * this is for signup
  */
-router.post("/signup", (req, res) => {
-	res.json({ status: "success" });
-});
+router.post("/signup", handleSignUp);
 
 router.post("/login", (req, res) => {
 	res.json({ status: "success" });
@@ -47,5 +46,7 @@ router.post("/student/:id/quiz/:quizId/save", (req, res) => {
 router.get("/student/qu", (req, res) => {
 	res.json({ status: "success" });
 });
+
+
 
 export default router;

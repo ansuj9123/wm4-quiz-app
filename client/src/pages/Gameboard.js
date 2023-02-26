@@ -57,7 +57,7 @@ function Gameboard() {
 				className="bt"
 				onClick={() => setQuestionNumber(questionNumber + 1)}
 				color="primary"
-				variant="success"
+				variant="contained"
 			>
 				Next
 			</Button>
