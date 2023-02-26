@@ -1,13 +1,11 @@
 import React from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Cards from "./pages/Cards";
 import NavBar from "./components/navbar/NavBar";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import ContactUs from "./pages/ContactUs";
 import SignUp from "./pages/SignUp";
-import Success from "./pages/Success";
-import Gameboard from "./pages/Gameboard";
+
 import Login from "./pages/Login";
 
 function App() {
@@ -33,5 +31,6 @@ function App() {
 		</>
 	);
 }
+
 
 export default App;
