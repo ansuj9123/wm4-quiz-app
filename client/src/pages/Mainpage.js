@@ -138,7 +138,7 @@ export default function Album() {
 				>
 					Something here to give the footer a purpose!
 				</Typography>
-				<Copyright />
+				{/* <Copyright /> */}
 			</Box>
 			{/* End footer */}
 		</ThemeProvider>

@@ -13,7 +13,7 @@ export default function MediaCard() {
 	return (
 		<Grid container className="card-container">
 			<Grid item xs={12} sm={4} md={4} className="gird-item">
-				<paper>
+				{/* <paper> */}
 					<Card sx={{ maxWidth: 345 }}>
 						<CardMedia
 							sx={{ height: 140 }}
@@ -35,11 +35,11 @@ export default function MediaCard() {
 							<Link to="/Login" className="link">Login in</Link>
 						</CardActions>
 					</Card>
-				</paper>
+				{/* </paper> */}
 			</Grid>
 
 			<Grid item xs={12} sm={4} md={4}>
-				<paper>
+				{/* <paper> */}
 					<Card sx={{ maxWidth: 345 }}>
 						<CardMedia
 							sx={{ height: 140 }}
@@ -60,11 +60,11 @@ export default function MediaCard() {
 							<Link  to="/Login" size="small" className="link">Login in</Link>
 						</CardActions>
 					</Card>
-				</paper>
+				{/* </paper> */}
 			</Grid>
 
 			<Grid item xs={12} sm={4} md={4}>
-				<paper>
+				{/* <paper> */}
 					<Card sx={{ maxWidth: 345 }}>
 						<CardMedia
 							sx={{ height: 140 }}
@@ -85,7 +85,7 @@ export default function MediaCard() {
 							<Link to="/Login"  size="small" className="link">Login in</Link>
 						</CardActions>
 					</Card>
-				</paper>
+				{/* </paper> */}
 			</Grid>
 		</Grid>
 	);

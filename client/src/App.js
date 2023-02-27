@@ -5,7 +5,8 @@ import NavBar from "./components/navbar/NavBar";
 import { Routes, Route } from "react-router-dom";
 import ContactUs from "./pages/ContactUs";
 import SignUp from "./pages/SignUp";
-
+import Gameboard from "./pages/Gameboard";
+import Success from "./pages/Success";
 import Login from "./pages/Login";
 
 function App() {
