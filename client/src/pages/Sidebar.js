@@ -7,8 +7,8 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+// import InboxIcon from "@mui/icons-material/MoveToInbox";
+// import MailIcon from "@mui/icons-material/Mail";
 import { mainNavbarItem } from "../components/navbar/NavbarListltem";
 
 function Sidebar() {
@@ -32,7 +32,7 @@ function Sidebar() {
 			<Toolbar />
 			<Divider />
 			<List>
-				{mainNavbarItem.map((text, index) => (
+				{mainNavbarItem.map((text) => (
 					<ListItem key={text.id} disablePadding>
 						<ListItemButton>
 							<ListItemIcon sx={{ color: "rgba(255,255,255,0.7)" }}>
