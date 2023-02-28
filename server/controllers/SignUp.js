@@ -1,17 +1,19 @@
-import dbConnection from "../utils/Database";
+const { Pool } = require("pg");
 
-async function handleSignUp (req,res){
+const pool = new Pool({
+	user: process.env.USERNAME,
+	host: process.env.DATABASE_URL,
+	database: process.env.DATABASE,
+	password: process.env.PASSWORD,
+	port: 5432,
+});
 
-    const user = req.body.user;
-
-   const result = await dbConnection`
-   INSERT INTO users 
-   (first_name, last_name, email, password, role)
-   VALUES(${user.first_name},${user.last_name},${user.email},${user.password},${user.role})
-   returning user_id
-      `;
-
-    return res.json(result[0]);
-}
-
-export { handleSignUp };
+export const SignUp = (req, res) => {
+	// pool.query("YOUR SQL QUERY GOES HERE")
+	//   .then((result) => res.json(result.rows))
+	//   .catch((error) => {
+	//     // eslint-disable-next-line no-console
+	//     console.error(error);
+	//     res.status(500).json(error);
+	//   });
+};

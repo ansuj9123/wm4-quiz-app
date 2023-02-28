@@ -29,7 +29,7 @@ function Sidebar() {
 				<Divider />
 				<Divider />
 				<List>
-					{mainNavbarItem.map((text, index) => (
+					{mainNavbarItem.map((text) => (
 						<ListItem key={text.id} disablePadding>
 							<ListItemButton>
 								<ListItemIcon>

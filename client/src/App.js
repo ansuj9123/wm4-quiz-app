@@ -6,8 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import ContactUs from "./pages/ContactUs";
 import SignUp from "./pages/SignUp";
 import Gameboard from "./pages/Gameboard";
-// import Success from "./pages/Success";
-import Student from "./pages/Student";
+
 import Login from "./pages/Login";
 import UserType from "./pages/UserType";
 
