@@ -1,0 +1,16 @@
+.stuBtn {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.jsBtn {
+        font-size: 2rem !important;
+        font-family: "Cormorant" !important;
+        text-transform:none !important;
+
+}
+
+.theText {
+    text-transform:none !important;
+}
