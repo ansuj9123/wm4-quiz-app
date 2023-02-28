@@ -5,8 +5,11 @@ import NavBar from "./components/navbar/NavBar";
 import { Routes, Route } from "react-router-dom";
 import ContactUs from "./pages/ContactUs";
 import SignUp from "./pages/SignUp";
-
+import Gameboard from "./pages/Gameboard";
+// import Success from "./pages/Success";
+import Student from "./pages/Student";
 import Login from "./pages/Login";
+import UserType from "./pages/UserType";
 
 function App() {
 	return (
@@ -21,12 +24,14 @@ function App() {
 				<Route exact path="/ContactUs" element={<ContactUs />}></Route>
 
 				<Route exact path="/Login" element={<Login />}></Route>
+        {/* <Route exact path="/Student" element={<Student />}></Route> */}
 
 				{/* <Route exact path="/Quizzes" element={<Quizzes />}></Route> */}
 
 				<Route exact path="/Gameboard" element={<Gameboard />}></Route>
-				<Route exact path="/success" element={<Success />}></Route>
+				<Route exact path="/Student" element={<Student />}></Route>
 				<Route exact path="/SignUp" element={<SignUp />}></Route>
+        <Route exact path="/UserType" element={<UserType />}></Route>
 			</Routes>
 		</>
 	);

@@ -13,9 +13,16 @@ background-color: #101f33;
 color: white;
 }
 
+.code {
+    color: red;
+  }
+  
 .logo{
-    font-size: 30px;
-
+    line-height: 1.02;
+    font-size: 13px;
+    font-family: "Cormorant";
+    width: 4rem;
+    text-align: center;
 }
 
 .nav-links{
@@ -39,10 +46,6 @@ margin: 0 10px;
 cursor: pointer;
 }
 
-.signup{
-    border: 1px solid rgb(224, 224, 158);
-    border-radius: 5px;
-}
 
 .mobile-menu-icon{
 
@@ -50,7 +53,7 @@ cursor: pointer;
 
 }
 
-@media screen and {max-width: 780px} {
+@media screen and (max-width: 780px) {
     .log{
         display: flex;
         position: absolute;
