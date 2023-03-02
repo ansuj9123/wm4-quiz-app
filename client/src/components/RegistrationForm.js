@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -12,19 +12,15 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { useState } from "react";
-import { useNavigate } from "react-router";
-import Usertype from "./UserType";
-
 
 function Copyright(props) {
 	return (
-    <Typography
+		<Typography
 			variant="body2"
 			color="text.secondary"
 			align="center"
 			{...props}
-			>
+		>
 			{"Copyright © "}
 			<Link color="inherit" href="https://mui.com/">
 				Your Website
@@ -38,24 +34,14 @@ function Copyright(props) {
 const theme = createTheme();
 
 export default function SignUp() {
-
-    const [firstName, setFirstName] = useState();
-
-    const [lastName, setLastName] = useState();
-
-    const [email, setEmail] = useState();
-
-    const [password, setPassword] = useState();
-
-	const navigate = useNavigate();
-
-
-
-    const handleSubmit = (e)=>{
-        e.preventDefault();
-		navigate("/success");
-        console.log(firstName);
-    };
+	const handleSubmit = (event) => {
+		event.preventDefault();
+		const data = new FormData(event.currentTarget);
+		console.log({
+			email: data.get("email"),
+			password: data.get("password"),
+		});
+	};
 
 	return (
 		<ThemeProvider theme={theme}>
@@ -86,13 +72,11 @@ export default function SignUp() {
 								<TextField
 									autoComplete="given-name"
 									name="firstName"
-                                    value={firstName}
-                                    onChange={(e)=>setFirstName(e.target.value)}
 									required
 									fullWidth
 									id="firstName"
 									label="First Name"
-									// autoFocus
+									//autoFocus
 								/>
 							</Grid>
 							<Grid item xs={12} sm={6}>
@@ -100,23 +84,16 @@ export default function SignUp() {
 									required
 									fullWidth
 									id="lastName"
-                                    value={lastName}
-                                    onChange={(e)=>setLastName(e.target.value)}
 									label="Last Name"
 									name="lastName"
 									autoComplete="family-name"
 								/>
 							</Grid>
 							<Grid item xs={12}>
-							<Usertype />
-							</Grid>
-							<Grid item xs={12}>
 								<TextField
 									required
 									fullWidth
 									id="email"
-                                    value={email}
-                                    onChange={(e)=>setEmail(e.target.value)}
 									label="Email Address"
 									name="email"
 									autoComplete="email"
@@ -127,8 +104,6 @@ export default function SignUp() {
 									required
 									fullWidth
 									name="password"
-                                    value={password}
-                                    onChange={(e)=>setPassword(e.target.value)}
 									label="Password"
 									type="password"
 									id="password"
@@ -149,7 +124,7 @@ export default function SignUp() {
 							fullWidth
 							variant="contained"
 							sx={{ mt: 3, mb: 2 }}
-						onSubmit={(e)=>handleSubmit(e)} >
+						>
 							Sign Up
 						</Button>
 						<Grid container justifyContent="flex-end">

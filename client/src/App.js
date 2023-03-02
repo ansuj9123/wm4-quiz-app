@@ -1,15 +1,14 @@
 import React from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Cards from "./pages/Cards";
 import NavBar from "./components/navbar/NavBar";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import ContactUs from "./pages/ContactUs";
 import SignUp from "./pages/SignUp";
-import Success from "./pages/Success";
 import Gameboard from "./pages/Gameboard";
+
 import Login from "./pages/Login";
-import FinalScore from "./pages/FinalScore";
+
 
 function App() {
 	return (
@@ -24,16 +23,18 @@ function App() {
 				<Route exact path="/ContactUs" element={<ContactUs />}></Route>
 
 				<Route exact path="/Login" element={<Login />}></Route>
+        {/* <Route exact path="/Student" element={<Student />}></Route> */}
 
 				{/* <Route exact path="/Quizzes" element={<Quizzes />}></Route> */}
 
 				<Route exact path="/Gameboard" element={<Gameboard />}></Route>
-				<Route exact path="/success" element={<Success />}></Route>
+				<Route exact path="/Student" element={<Student />}></Route>
 				<Route exact path="/SignUp" element={<SignUp />}></Route>
 
 			</Routes>
 		</>
 	);
 }
+
 
 export default App;
