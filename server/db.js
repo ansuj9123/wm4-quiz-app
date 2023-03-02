@@ -1,8 +1,6 @@
 import { Pool } from "pg";
-
 import config from "./utils/config";
-import logger from "./utils/logger";
-
+// import logger from "./utils/logger";
 const pool = new Pool({
     connectionString: config.dbUrl,
   connectionTimeoutMillis: 5000,
@@ -16,10 +14,10 @@ export const connectDb = async () => {
   try {
     client = await pool.connect();
   } catch (err) {
-    logger.error("%O", err);
+   // logger.error("%O", err);
     process.exit(1);
   }
-  logger.info("Postgres connected to %s", client.database);
+  //logger.info("Postgres connected to %s", client.database);
   client.release();
 };
 
@@ -31,7 +29,7 @@ export const disconnectDb = () => pool.end();
  */
 export default {
 	query: (...args) => {
-		logger.debug("Postgres querying %O", args);
+		//logger.debug("Postgres querying %O", args);
 		return pool.query.apply(pool, args);
 	},
 };
