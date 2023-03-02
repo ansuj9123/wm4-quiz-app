@@ -1,9 +1,9 @@
-// import { Pool } from "pg";
 
-// import config from "./utils/config";
+
+import { Pool } from "pg";
+import config from "./utils/config";
 // import logger from "./utils/logger";
 
-<<<<<<< Updated upstream
 const pool = new Pool({
     connectionString: config.dbUrl,
   connectionTimeoutMillis: 5000,
@@ -17,13 +17,13 @@ export const connectDb = async () => {
   try {
     client = await pool.connect();
   } catch (err) {
-    logger.error("%O", err);
+   // logger.error("%O", err);
     process.exit(1);
   }
-  logger.info("Postgres connected to %s", client.database);
+  //logger.info("Postgres connected to %s", client.database);
   client.release();
 };
-=======
+
 // const pool = new Pool({
 //   connectionString: config.dbUrl,
 //   connectionTimeoutMillis: 5000,
@@ -43,23 +43,11 @@ export const connectDb = async () => {
 //   logger.info("Postgres connected to %s", client.database);
 //   client.release();
 // };
->>>>>>> Stashed changes
+
 
 // export const disconnectDb = () => pool.end();
 
-<<<<<<< Updated upstream
-/**
- * Access this with `import db from "path/to/db";` then use it with
- * `await db.query("<SQL>", [...<variables>])`.
- */
-export default {
-	query: (...args) => {
-		logger.debug("Postgres querying %O", args);
-		return pool.query.apply(pool, args);
-	},
-};
 
-=======
 // /**
 //  * Access this with `import db from "path/to/db";` then use it with
 //  * `await db.query("<SQL>", [...<variables>])`.
@@ -70,4 +58,4 @@ export default {
 //     return pool.query.apply(pool, args);
 //   },
 // };
->>>>>>> Stashed changes
+
