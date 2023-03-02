@@ -10,6 +10,8 @@ router.get("/", (_, res) => {
 	res.json({ message: "Hello, world!" });
 });
 
+const dataApi = require("./ApiData.json");
+
 /**
  * this is for signup
  */
@@ -47,6 +49,12 @@ router.get("/student/qu", (req, res) => {
 	res.json({ status: "success" });
 });
 
+<<<<<<< Updated upstream
 
+=======
+router.get("/students/quizData/", (req, res) =>{
+	res.json(dataApi);
+});
+>>>>>>> Stashed changes
 
 export default router;

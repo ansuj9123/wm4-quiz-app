@@ -1,12 +1,14 @@
 import React from "react";
-import TeacherCreateQuiz from "./TeacherCreateQuiz";
+
 import Sidebar from "./Sidebar";
+import ContactUs from "./ContactUs";
 
 function About() {
   return (
 	<div>
 		<Sidebar />
-		<TeacherCreateQuiz />
+		<ContactUs />
+
 	</div>
   );
 }

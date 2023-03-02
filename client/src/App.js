@@ -9,6 +9,7 @@ import SignUp from "./pages/SignUp";
 import Success from "./pages/Success";
 import Gameboard from "./pages/Gameboard";
 import Login from "./pages/Login";
+import FinalScore from "./pages/FinalScore";
 
 function App() {
 	return (
@@ -29,6 +30,7 @@ function App() {
 				<Route exact path="/Gameboard" element={<Gameboard />}></Route>
 				<Route exact path="/success" element={<Success />}></Route>
 				<Route exact path="/SignUp" element={<SignUp />}></Route>
+
 			</Routes>
 		</>
 	);
