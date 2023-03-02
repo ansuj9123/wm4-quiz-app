@@ -8,7 +8,7 @@ import SignUp from "./pages/SignUp";
 import Gameboard from "./pages/Gameboard";
 
 import Login from "./pages/Login";
-import UserType from "./pages/UserType";
+
 
 function App() {
 	return (
@@ -30,7 +30,7 @@ function App() {
 				<Route exact path="/Gameboard" element={<Gameboard />}></Route>
 				<Route exact path="/Student" element={<Student />}></Route>
 				<Route exact path="/SignUp" element={<SignUp />}></Route>
-        <Route exact path="/UserType" element={<UserType />}></Route>
+
 			</Routes>
 		</>
 	);

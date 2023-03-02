@@ -1,14 +1,21 @@
 import React from "react";
 import Sidebar from "./Sidebar";
-import MenthorDashboard from "./MenthorDashboard";
-import Student from "./Student";
+
+
 
 
 function ContactUs() {
-	return <div>
+	return <div className="app">
+        <div className="main">main</div>
+        <div className="money">money</div>
         <Sidebar />
-        <Student />
+
         <MenthorDashboard />
+
+        <Gameboard />
+
+
+
     </div>;
 }
 
