@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "@mui/material/Card";
+import Paper from "@mui/material/Paper";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -13,7 +14,7 @@ export default function MediaCard() {
 	return (
 		<Grid container className="card-container">
 			<Grid item xs={12} sm={4} md={4} className="gird-item">
-				{/* <paper> */}
+				<Paper>
 					<Card sx={{ maxWidth: 345 }}>
 						<CardMedia
 							sx={{ height: 140 }}
@@ -35,11 +36,10 @@ export default function MediaCard() {
 							<Link to="/Login" className="link">Login in</Link>
 						</CardActions>
 					</Card>
-				{/* </paper> */}
+				</Paper>
 			</Grid>
-
 			<Grid item xs={12} sm={4} md={4}>
-				{/* <paper> */}
+				<Paper>
 					<Card sx={{ maxWidth: 345 }}>
 						<CardMedia
 							sx={{ height: 140 }}
@@ -60,11 +60,11 @@ export default function MediaCard() {
 							<Link  to="/Login" size="small" className="link">Login in</Link>
 						</CardActions>
 					</Card>
-				{/* </paper> */}
+				</Paper>
 			</Grid>
 
 			<Grid item xs={12} sm={4} md={4}>
-				{/* <paper> */}
+				<Paper>
 					<Card sx={{ maxWidth: 345 }}>
 						<CardMedia
 							sx={{ height: 140 }}
@@ -85,7 +85,7 @@ export default function MediaCard() {
 							<Link to="/Login"  size="small" className="link">Login in</Link>
 						</CardActions>
 					</Card>
-				{/* </paper> */}
+				</Paper>
 			</Grid>
 		</Grid>
 	);

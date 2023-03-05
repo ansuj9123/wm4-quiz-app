@@ -1,7 +1,9 @@
 import { Router } from "express";
 
 import logger from "./utils/logger";
-import { handleSignUp } from "./controllers/SignUp";
+// import { handleSignUp } from "./controllers/SignUp";
+import db from "./db";
+
 
 const router = Router();
 
@@ -10,51 +12,23 @@ router.get("/", (_, res) => {
 	res.json({ message: "Hello, world!" });
 });
 
-const dataApi = require("./ApiData.json");
-
-/**
- * this is for signup
- */
-router.post("/signup", handleSignUp);
-
-router.post("/login", (req, res) => {
-	res.json({ status: "success" });
+router.get("/quiz", (req, res) => {
+	db.query("SELECT * FROM quiz")
+	.then((result) => {
+		res.json(result.rows);
+	})
+	.catch((error) => {
+		res.status(500).json(error);
+	});
 });
 
-router.post("/quiz/create", (req, res) => {
-	res.json({ status: "success" });
+router.get("/questions", (req, res) => {
+	db.query("SELECT * FROM questions")
+	.then((result) => {
+		res.json(result.rows);
+	})
+	.catch((error) => {
+		res.status(500).json(error);
+	});
 });
-
-router.post("/quiz/edit", (req, res) => {
-	res.json({ status: "success" });
-});
-
-router.delete("/quiz/delete/:id", (req, res) => {
-	res.json({ status: "success" });
-});
-
-router.get("/quiz/:id", (req, res) => {
-	res.json({ status: "success" });
-});
-
-router.get("/student/quiz", (req, res) => {
-	res.json({ status: "success" });
-});
-
-router.post("/student/:id/quiz/:quizId/save", (req, res) => {
-	res.json({ status: "success" });
-});
-
-router.get("/student/qu", (req, res) => {
-	res.json({ status: "success" });
-});
-
-<<<<<<< Updated upstream
-
-=======
-router.get("/students/quizData/", (req, res) =>{
-	res.json(dataApi);
-});
->>>>>>> Stashed changes
-
 export default router;

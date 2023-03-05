@@ -1,0 +1,13 @@
+INSERT INTO questions (quiz_id, question_text, answer, option_1, option_2, option_3) VALUES (3, 'JavaScript is an _______ language', 'Object-Oriented', 'Object-Based', 'Procedural', 'None of the answers');
+INSERT INTO questions (quiz_id, question_text, answer, option_1, option_2, option_3) VALUES (3, 'Which of the following keywords is used to define a variable in JavaScript?', 'Both var & let', 'var', 'let', 'None');
+INSERT INTO questions (quiz_id, question_text, answer, option_1, option_2, option_3) VALUES (3, 'Which of the following methods can be used to display data in some form using JavaScript?', 'All the options', 'document.write()', 'console.log()', 'window.alert()');
+INSERT INTO questions (quiz_id, question_text, answer, option_1, option_2, option_3) VALUES (3, 'How can a datatype be declared to be a constant type?', 'const', 'var', 'let', 'constant');
+INSERT INTO questions (quiz_id, question_text, answer, option_1, option_2, option_3) VALUES (3, 'What keyword is used to check whether a given property is valid or not?', 'in', 'is in', 'exists', 'lies');
+INSERT INTO questions (quiz_id, question_text, answer, option_1, option_2, option_3) VALUES (3, 'When an operator''s value is NULL, the typeof returned by the unary operator is:', 'Object', 'Boolean', 'Undefined', 'Integer');
+INSERT INTO questions (quiz_id, question_text, answer, option_1, option_2, option_3) VALUES (3, 'What is the output of the following code snippet? print''(NaN === NaN)', 'false', 'true', 'undefined', 'Error');
+INSERT INTO questions (quiz_id, question_text, answer, option_1, option_2, option_3) VALUES (3, 'Which function is used to serialize an object into a JSON string in JavaScript?', 'stringify()', 'parse()', 'convert()', 'None of the options');
+INSERT INTO questions (quiz_id, question_text, answer, option_1, option_2, option_3) VALUES (3, 'Which of the following is not a JavaScript framework?', 'Cassandra', 'Node', 'Vue', 'React');
+INSERT INTO questions (quiz_id, question_text, answer, option_1, option_2, option_3) VALUES (3, 'What keyword is used to declare an asynchronous function in JavaScript', 'async', 'await', 'setTimeout', 'None of the options');
+INSERT INTO questions (quiz_id, question_text, answer, option_1, option_2, option_3) VALUES (3, 'How to stop an interval timer in JavaScript?', 'clearInterval', 'clearTimer', 'intervalOver', 'stop');
+INSERT INTO questions (quiz_id, question_text, answer, option_1, option_2, option_3) VALUES (3, 'How do we write a comment in JavaScript?', '//', '/**/', '#', '$$');
+INSERT INTO questions (quiz_id, question_text, answer, option_1, option_2, option_3) VALUES (3, 'Which of the following are closures in JavaScript?', 'All', 'Variables', 'Functions', 'Objects');
