@@ -30,6 +30,3 @@ app.use(clientRouter(apiRoot));
 app.use(logErrors());
 
 export default app;
-
-
-
