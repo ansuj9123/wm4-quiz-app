@@ -15,10 +15,9 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 
-
 function Copyright(props) {
 	return (
-      	<Typography
+		<Typography
 			variant="body2"
 			color="text.secondary"
 			align="center"
@@ -37,24 +36,21 @@ function Copyright(props) {
 const theme = createTheme();
 
 export default function SignUp() {
+	const [firstName, setFirstName] = useState();
 
-    const [firstName, setFirstName] = useState();
+	const [lastName, setLastName] = useState();
 
-    const [lastName, setLastName] = useState();
+	const [email, setEmail] = useState();
 
-    const [email, setEmail] = useState();
-
-    const [password, setPassword] = useState();
+	const [password, setPassword] = useState();
 
 	const navigate = useNavigate();
 
-
-
-    const handleSubmit = (e)=>{
-        e.preventDefault();
+	const handleSubmit = (e) => {
+		e.preventDefault();
 		navigate("/success");
-        console.log(firstName);
-    };
+		console.log(firstName);
+	};
 
 	return (
 		<ThemeProvider theme={theme}>
@@ -85,13 +81,13 @@ export default function SignUp() {
 								<TextField
 									autoComplete="given-name"
 									name="firstName"
-                                    value={firstName}
-                                    onChange={(e)=>setFirstName(e.target.value)}
+									value={firstName}
+									onChange={(e) => setFirstName(e.target.value)}
 									required
 									fullWidth
 									id="firstName"
 									label="First Name"
-									autoFocus
+									// autoFocus
 								/>
 							</Grid>
 							<Grid item xs={12} sm={6}>
@@ -99,8 +95,8 @@ export default function SignUp() {
 									required
 									fullWidth
 									id="lastName"
-                                    value={lastName}
-                                    onChange={(e)=>setLastName(e.target.value)}
+									value={lastName}
+									onChange={(e) => setLastName(e.target.value)}
 									label="Last Name"
 									name="lastName"
 									autoComplete="family-name"
@@ -111,8 +107,8 @@ export default function SignUp() {
 									required
 									fullWidth
 									id="email"
-                                    value={email}
-                                    onChange={(e)=>setEmail(e.target.value)}
+									value={email}
+									onChange={(e) => setEmail(e.target.value)}
 									label="Email Address"
 									name="email"
 									autoComplete="email"
@@ -123,8 +119,8 @@ export default function SignUp() {
 									required
 									fullWidth
 									name="password"
-                                    value={password}
-                                    onChange={(e)=>setPassword(e.target.value)}
+									value={password}
+									onChange={(e) => setPassword(e.target.value)}
 									label="Password"
 									type="password"
 									id="password"
@@ -145,7 +141,8 @@ export default function SignUp() {
 							fullWidth
 							variant="contained"
 							sx={{ mt: 3, mb: 2 }}
-						onSubmit={(e)=>handleSubmit(e)} >
+							onSubmit={(e) => handleSubmit(e)}
+						>
 							Sign Up
 						</Button>
 						<Grid container justifyContent="flex-end">

@@ -9,43 +9,36 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { mainNavbarItem } from "./MainNavbarItem";
 
-
 function Sidebar() {
-    const drawerWidth = 220;
-  return (
-			<Drawer
-				sx={{
+	const drawerWidth = 220;
+	return (
+		<Drawer
+			sx={{
+				width: drawerWidth,
+				flexShrink: 0,
+				"& .MuiDrawer-paper": {
 					width: drawerWidth,
-					flexShrink: 0,
-					"& .MuiDrawer-paper": {
-						width: drawerWidth,
-						boxSizing: "border-box",
-					},
-				}}
-				variant="permanent"
-				anchor="left"
-			>
-				<Toolbar />
-				<Divider />
-				<Divider />
-				<List>
-					{mainNavbarItem.map((text, index) => (
-						<ListItem key={text.id} disablePadding>
-							<ListItemButton>
-								<ListItemIcon>
-									{text.icon}
-								</ListItemIcon>
-								<ListItemText primary={text.label} />
-							</ListItemButton>
-						</ListItem>
-					))}
-				</List>
-			</Drawer>
-
+					boxSizing: "border-box",
+				},
+			}}
+			variant="permanent"
+			anchor="left"
+		>
+			<Toolbar />
+			<Divider />
+			<Divider />
+			<List>
+				{mainNavbarItem.map((text) => (
+					<ListItem key={text.id} disablePadding>
+						<ListItemButton>
+							<ListItemIcon>{text.icon}</ListItemIcon>
+							<ListItemText primary={text.label} />
+						</ListItemButton>
+					</ListItem>
+				))}
+			</List>
+		</Drawer>
 	);
 }
 
 export default Sidebar;
-
-
-

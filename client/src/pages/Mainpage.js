@@ -13,21 +13,21 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import Link from "@mui/material/Link";
+// import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-function Mainpage() {
-	return (
-		<Typography variant="body2" color="text.secondary" align="center">
-			{"Copyright © "}
-			<Link color="inherit" href="https://mui.com/">
-				Your Website
-			</Link>{" "}
-			{new Date().getFullYear()}
-			{"."}
-		</Typography>
-	);
-}
+// function Mainpage() {
+// 	return (
+// 		<Typography variant="body2" color="text.secondary" align="center">
+// 			{"Copyright © "}
+// 			<Link color="inherit" href="https://mui.com/">
+// 				Your Website
+// 			</Link>{" "}
+// 			{new Date().getFullYear()}
+// 			{"."}
+// 		</Typography>
+// 	);
+// }
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -138,7 +138,7 @@ export default function Album() {
 				>
 					Something here to give the footer a purpose!
 				</Typography>
-				<Copyright />
+				{/* <Copyright /> */}
 			</Box>
 			{/* End footer */}
 		</ThemeProvider>

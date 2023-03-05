@@ -30,5 +30,4 @@ export const mainNavbarItem = [
 		label: "Students",
 		route: "route",
 	},
-
 ];

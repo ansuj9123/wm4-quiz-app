@@ -1,6 +1,6 @@
 import * as React from "react";
 import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
@@ -35,16 +35,14 @@ function Copyright(props) {
 const theme = createTheme();
 
 export default function SignInSide() {
+	const [email, setEmail] = useState();
 
-    const [email, setEmail] = useState();
+	const [password, setPassword] = useState();
 
-       const [password, setPassword] = useState();
-
-
-        const handleSubmit = (e)=>{
-            e.preventDefault();
-            console.log(email);
-        };
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		console.log(email);
+	};
 
 	return (
 		<ThemeProvider theme={theme}>
@@ -91,22 +89,20 @@ export default function SignInSide() {
 							<TextField
 								margin="normal"
 								required
-								fullWidth
 								id="email"
-                                value={email}
-                                onChange={(e)=>setEmail(e.target.value)}
+								value={email}
+								onChange={(e) => setEmail(e.target.value)}
 								label="Email Address"
 								name="email"
 								autoComplete="email"
-								autoFocus
+								// autoFocus
 							/>
 							<TextField
 								margin="normal"
 								required
-								fullWidth
 								name="password"
-                                value={password}
-                                onChange={(e)=>setPassword(e.target.value)}
+								value={password}
+								onChange={(e) => setPassword(e.target.value)}
 								label="Password"
 								type="password"
 								id="password"
@@ -116,12 +112,7 @@ export default function SignInSide() {
 								control={<Checkbox value="remember" color="primary" />}
 								label="Remember me"
 							/>
-							<Link to="/Quizzes"
-
-								fullWidth
-								variant="contained"
-								sx={{ mt: 3, mb: 2 }}
-							>
+							<Link to="/Quizzes" variant="contained" sx={{ mt: 3, mb: 2 }}>
 								Sign In
 							</Link>
 							<Grid container>

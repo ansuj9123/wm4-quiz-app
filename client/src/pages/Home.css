@@ -10,15 +10,11 @@
 	background-color: yellow;
 }
 
-.question-container{
-display: flex;
+.question-container {
+	display: flex;
 }
 
-
-
-.create-quiz{
-
+.create-quiz {
 }
-.edit-quiz{
-
+.edit-quiz {
 }

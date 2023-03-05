@@ -1,10 +1,10 @@
 import React from "react";
 
 function Success() {
-  return (
+	return (
 		<div>
 			<h2>
-				<i style={{ color:"blue" }}>
+				<i style={{ color: "blue" }}>
 					You have successfully register, check your Email and verified your
 					account
 				</i>
@@ -14,4 +14,3 @@ function Success() {
 }
 
 export default Success;
-

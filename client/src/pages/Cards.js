@@ -33,7 +33,9 @@ export default function MediaCard() {
 						</CardContent>
 						<CardActions>
 							<Button size="small">Share</Button>
-							<Link to="/Login" className="link">Login in</Link>
+							<Link to="/Login" className="link">
+								Login in
+							</Link>
 						</CardActions>
 					</Card>
 				</Paper>
@@ -58,7 +60,9 @@ export default function MediaCard() {
 						</CardContent>
 						<CardActions>
 							<Button size="small">Share</Button>
-							<Link  to="/Login" size="small" className="link">Login in</Link>
+							<Link to="/Login" size="small" className="link">
+								Login in
+							</Link>
 						</CardActions>
 					</Card>
 				</Paper>
@@ -83,7 +87,9 @@ export default function MediaCard() {
 						</CardContent>
 						<CardActions>
 							<Button size="small">Share</Button>
-							<Link to="/Login"  size="small" className="link">Login in</Link>
+							<Link to="/Login" size="small" className="link">
+								Login in
+							</Link>
 						</CardActions>
 					</Card>
 				</Paper>
