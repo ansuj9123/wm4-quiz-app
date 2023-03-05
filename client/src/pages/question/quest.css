@@ -1,0 +1,30 @@
+#main-box1{
+    padding-top:50px;
+  width: 588px;
+  height: 500px;
+  margin-left: 295px;
+   background-color: #101f33;
+}
+#main-box2{
+    padding-top: 60px;
+width: 300px;
+height: 300px;
+margin-left: 121px;
+background-color: azure;
+
+}
+ input {
+    height: 40px;
+    width :  90px;
+    text-align: center;
+    color: aliceblue;
+    margin-left: 38px;
+    background-color: #101f33;
+    margin-top: 5%;
+ }
+
+ #question-div > h2{
+    color: blue;
+    font-size: 20px;
+    font-family: 'Roboto Flex', sans-serif;
+ }

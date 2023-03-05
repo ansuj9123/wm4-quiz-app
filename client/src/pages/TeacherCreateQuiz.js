@@ -1,11 +1,11 @@
 import React from "react";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 function TeacherCreateQuiz() {
 
-	const navigate = useNavigate();
+	// const navigate = useNavigate();
 
   return (
 		<Stack spacing={6} direction="column">

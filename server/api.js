@@ -31,8 +31,4 @@ router.get("/questions", (req, res) => {
 		res.status(500).json(error);
 	});
 });
-
-
-
-
 export default router;

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -14,16 +14,17 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import Usertype from "./UserType";
 
 
 function Copyright(props) {
 	return (
-      	<Typography
+    <Typography
 			variant="body2"
 			color="text.secondary"
 			align="center"
 			{...props}
-		>
+			>
 			{"Copyright © "}
 			<Link color="inherit" href="https://mui.com/">
 				Your Website
@@ -91,7 +92,7 @@ export default function SignUp() {
 									fullWidth
 									id="firstName"
 									label="First Name"
-									autoFocus
+									// autoFocus
 								/>
 							</Grid>
 							<Grid item xs={12} sm={6}>
@@ -105,6 +106,9 @@ export default function SignUp() {
 									name="lastName"
 									autoComplete="family-name"
 								/>
+							</Grid>
+							<Grid item xs={12}>
+							<Usertype />
 							</Grid>
 							<Grid item xs={12}>
 								<TextField

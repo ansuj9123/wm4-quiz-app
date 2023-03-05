@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-import Home from "../../pages/Home";
-import About from "../../pages/About";
-import ContactUs from "../../pages/ContactUs";
-import Login from "../../pages/Login";
+// import Home from "../../pages/Home";
+// import About from "../../pages/About";
+// import ContactUs from "../../pages/ContactUs";
+// import Login from "../../pages/Login";
 
 function NavBar() {
 	return (
 		<nav className="nav-bar">
-			<h3 className="logo">Logo</h3>
-			<ul className="nav-links">
+    <h3 className="logo"><span className="code">&lt; CODE &gt;</span> YOUR FUTURE</h3>
+			<ul className="nav-links .visible">
 				<Link to="/" className="home">
 					<li>Home</li>
 				</Link>
