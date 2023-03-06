@@ -3,7 +3,6 @@ import Sidebar from "./Sidebar";
 
 
 
-
 function ContactUs() {
 	return <div className="app">
         <div className="main">main</div>

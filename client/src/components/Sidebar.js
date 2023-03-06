@@ -9,7 +9,6 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { mainNavbarItem } from "./MainNavbarItem";
 
-
 function Sidebar() {
     const drawerWidth = 220;
   return (
@@ -46,6 +45,3 @@ function Sidebar() {
 }
 
 export default Sidebar;
-
-
-

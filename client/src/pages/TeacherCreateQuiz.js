@@ -4,6 +4,7 @@ import Button from "@mui/material/Button";
 // import { useNavigate } from "react-router-dom";
 
 function TeacherCreateQuiz() {
+	// const navigate = useNavigate();
 
 	// const navigate = useNavigate();
 
@@ -15,7 +16,6 @@ function TeacherCreateQuiz() {
 			<Button className="outlined-btn" variant="contained">
 				Edit Quiz
 			</Button>
-
 		</Stack>
 	);
 }
