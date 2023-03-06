@@ -6,7 +6,9 @@ import Button from "@mui/material/Button";
 function TeacherCreateQuiz() {
 	// const navigate = useNavigate();
 
-	return (
+	// const navigate = useNavigate();
+
+  return (
 		<Stack spacing={6} direction="column">
 			<Button href="/Gameboard" className="contained-btn" variant="contained">
 				Create Quiz
