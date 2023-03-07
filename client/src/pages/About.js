@@ -5,6 +5,7 @@ import Sidebar from "./Sidebar";
 function About() {
 	return (
 		<div>
+			<h2>About</h2>
 			<Sidebar />
 			<TeacherCreateQuiz />
 		</div>
