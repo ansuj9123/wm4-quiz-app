@@ -1,4 +1,5 @@
-import * as React from "react";
+//eslint-disable-next-line
+import React, {useState} from "react";
 import Avatar from "@mui/material/Avatar";
 // import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -12,7 +13,6 @@ import Grid from "@mui/material/Grid";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { useState } from "react";
 
 function Copyright(props) {
 	return (
@@ -89,6 +89,7 @@ export default function SignInSide() {
 							<TextField
 								margin="normal"
 								required
+								//helperText={errors.email ? "Please enter a valid email" : ""}
 								id="email"
 								value={email}
 								onChange={(e) => setEmail(e.target.value)}
