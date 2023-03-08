@@ -1,3 +1,4 @@
+
 import { Router } from "express";
 
 import logger from "./utils/logger";
@@ -22,6 +23,7 @@ router.get("/quiz", (req, res) => {
 });
 
 router.get("/questions", (req, res) => {
+	res.setHeader("Access-Control-Allow-Origin", "*");
 	db.query("SELECT * FROM questions")
 		.then((result) => {
 			res.json(result.rows);

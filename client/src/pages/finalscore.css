@@ -1,0 +1,43 @@
+
+.final-scores{
+width: 500px;
+height: 500px;
+background-color: #101f33;
+border: 5px solid rgb(136, 98, 98);
+margin: 100px;
+margin-left: 30%;
+
+
+padding: 20px;
+/* margin: auto; */
+
+
+}
+
+.score-container{
+    margin: auto;
+    width: 50%;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    
+}
+
+.score{
+background-color: aquamarine;
+padding: 20px;
+justify-content: center;
+margin-top: 189px;
+
+
+}
+
+.return-to-quiz{
+margin-top: 6rem;
+}
+
+
+
+
