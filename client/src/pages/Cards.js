@@ -61,7 +61,7 @@ export default function MediaCard() {
 						<CardActions>
 							<Button size="small">Share</Button>
 							<Link to="/Login" size="small" className="link">
-								Login 
+								Login
 							</Link>
 						</CardActions>
 					</Card>
