@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import "./about.css";
 
@@ -7,6 +9,10 @@ function About() {
 		<div>
 			{/* <Sidebar />
 		<TeacherCreateQuiz /> */}
+			<h4>
+				About <span style={{ color: "red" }}>CodeYourFuture</span> quiz app
+			</h4>
+
 			<p className="theTopic">
 				We believe that learning should be fun, and that is why we have designed
 				our app to be both informative and entertaining. Whether you are looking
