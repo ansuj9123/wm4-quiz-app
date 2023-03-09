@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "@mui/material/Card";
-import Paper from "@mui/material/Paper";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -14,8 +13,8 @@ export default function MediaCard() {
 	return (
 		<Grid container className="card-container">
 			<Grid item xs={12} sm={4} md={4} className="gird-item">
-				<Paper>
-					<Card sx={{ maxWidth: 345 }}>
+				<paper>
+					<Card className="cardOne" sx={{ maxWidth: 345 }}>
 						<CardMedia
 							sx={{ height: 140 }}
 							image="https://images.pexels.com/photos/6325984/pexels-photo-6325984.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -33,17 +32,15 @@ export default function MediaCard() {
 						</CardContent>
 						<CardActions>
 							<Button size="small">Share</Button>
-							<Link to="/Login" className="link">
-								Login
-							</Link>
+							<Link to="/Login" className="link">Login in</Link>
 						</CardActions>
 					</Card>
-				</Paper>
+				</paper>
 			</Grid>
 
 			<Grid item xs={12} sm={4} md={4}>
-				<Paper>
-					<Card sx={{ maxWidth: 345 }}>
+				<paper>
+					<Card className="cardTwo" sx={{ maxWidth: 345 }}>
 						<CardMedia
 							sx={{ height: 140 }}
 							image="https://images.pexels.com/photos/5212348/pexels-photo-5212348.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -60,17 +57,15 @@ export default function MediaCard() {
 						</CardContent>
 						<CardActions>
 							<Button size="small">Share</Button>
-							<Link to="/Login" size="small" className="link">
-								Login 
-							</Link>
+							<Link  to="/Login" size="small" className="link">Login in</Link>
 						</CardActions>
 					</Card>
-				</Paper>
+				</paper>
 			</Grid>
 
 			<Grid item xs={12} sm={4} md={4}>
-				<Paper>
-					<Card sx={{ maxWidth: 345 }}>
+				<paper>
+					<Card className="cardThree" sx={{ maxWidth: 345 }}>
 						<CardMedia
 							sx={{ height: 140 }}
 							image="https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -87,12 +82,10 @@ export default function MediaCard() {
 						</CardContent>
 						<CardActions>
 							<Button size="small">Share</Button>
-							<Link to="/Login" size="small" className="link">
-								Login
-							</Link>
+							<Link to="/Login"  size="small" className="link">Login in</Link>
 						</CardActions>
 					</Card>
-				</Paper>
+				</paper>
 			</Grid>
 		</Grid>
 	);
