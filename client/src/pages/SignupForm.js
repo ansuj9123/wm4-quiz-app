@@ -14,6 +14,8 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import Roles from "./Roles";
+
 
 function Copyright(props) {
 	return (
@@ -102,6 +104,7 @@ export default function SignUp() {
 									autoComplete="family-name"
 								/>
 							</Grid>
+							<Roles />
 							<Grid item xs={12}>
 								<TextField
 									required

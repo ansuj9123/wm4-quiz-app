@@ -1,6 +1,10 @@
-.logo {
-	width: 100px;
-}
+.home {
+	display: grid;
+    grid-template-areas: "picture";
+    place-items: center;
+	background: url(https://th.bing.com/th/id/R.c895db405f490e3eda00969757c55e3d?rik=8dq47eQd%2fd35QQ&pid=ImgRaw&r=0)
+    no-repeat;    height: 48vw;
+    background-size: cover;}
 
 .message {
 	color: blue;
@@ -8,13 +12,4 @@
 
 .message:hover {
 	background-color: yellow;
-}
-
-.question-container {
-	display: flex;
-}
-
-.create-quiz {
-}
-.edit-quiz {
 }
