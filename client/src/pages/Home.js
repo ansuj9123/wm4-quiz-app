@@ -7,11 +7,13 @@ import Sidebar from "./Sidebar";
 
 
 
+
 function Home() {
 	return (
 		<div className="home">
 			<Cards />
 			<Sidebar />
+
 
 
 
