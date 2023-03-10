@@ -23,9 +23,9 @@ function Gameboard() {
 
 	const [answerOrder, setAnswerOrder] = useState([
 		"answer",
-		"option_1",
-		"option_2",
-		"option_3",
+		"opt1",
+		"opt2",
+		"opt3",
 	]);
 
 	async function getQuestions() {
@@ -47,7 +47,6 @@ function Gameboard() {
 		}
 	}
 
-	
 	const shuffleAnswers = useCallback(() => {
 		let newArray = answerOrder;
 
