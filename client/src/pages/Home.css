@@ -1,15 +1,25 @@
-.home {
+/* .home {
 	display: grid;
     grid-template-areas: "picture";
     place-items: center;
 	background: url(https://th.bing.com/th/id/R.c895db405f490e3eda00969757c55e3d?rik=8dq47eQd%2fd35QQ&pid=ImgRaw&r=0)
     no-repeat;    height: 48vw;
-    background-size: cover;}
+    background-size: cover;
+} */
 
-.message {
-	color: blue;
+.theHome {
+	background-color: #89CFF0;
+	height: 43.2rem;
+	margin-top: -48px;
 }
 
-.message:hover {
-	background-color: yellow;
+.hTitle {	
+	padding-top: 26px;
+	margin-left: 13rem;
+	color: black;
+    font-size: 2.5rem;
+    font-family: "Cormorant";
+    text-align: center;
+    margin: 3rem;
+    font-style: oblique;
 }
