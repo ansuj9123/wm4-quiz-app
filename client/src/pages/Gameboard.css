@@ -1,68 +1,46 @@
 
-.quiz-container{
-border-radius: 10px;
-padding: 40px;
-background-color: white;
-margin-top: 100px;
-width: 70%;
-margin: auto;
-color: black;
-margin-top: 120px;
-box-shadow: 1px 1px 10px 5px rgb(234, 229, 229);
-
-
+.quiz-container {
+    border-radius: 10px;
+    padding: 40px;
+    background-color: white;
+    width: 70%;
+    color: black;
+    margin: 120px auto auto;
+    box-shadow: 1px 1px 10px 5px rgb(234, 229, 229);
 }
 
-.question-container{
-margin-bottom: 20px;
-
-margin-left: 215px;
-margin-left: -2px;
-font-size: 30px;
-
+.question-container {
+    margin-bottom: 20px;
+    margin-left: -2px;
+    font-size: 30px;
 }
 
-.answers-container{
-
-
-margin-left: -2px;
-margin-bottom: 20px;
-
-
+.answers-container {
+    margin-left: -2px;
+    margin-bottom: 20px;
 }
 
-.answer{
-border-radius: 5px;
-background-color: #d0dbe8;
-margin-bottom: 10px;
-padding: 20px;
-display: flex;
-font-size: 20px;
-gap: 20px;
-align-items: center;
+.answer {
+    border-radius: 5px;
+    background-color: #d0dbe8;
+    margin-bottom: 10px;
+    padding: 20px;
+    display: flex;
+    font-size: 20px;
+    gap: 20px;
+    align-items: center;
 }
 
-
-.option-0 {
-background-color: rgb(144, 237, 144);
-
-}
-.option-1 {
-background-color: rgb(144, 237, 144);
-
-}
-.option-2{
-background-color: rgb(144, 237, 144);
-
-}
-.option-3{
-background-color: rgb(144, 237, 144);
-
+.selected-answer {
+    border-color: #101f33;
+    border-width: 3px;
+    border-style: solid;
 }
 
-
-.option-incorrect{
-background-color: rgb(239, 132, 132);
-
+.option-correct {
+    background-color: rgb(144, 237, 144);
 }
 
+.option-incorrect {
+    background-color: rgb(239, 132, 132);
+}

@@ -7,7 +7,7 @@ import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 import CropDinIcon from "@mui/icons-material/CropDin";
 import ChangeHistoryIcon from "@mui/icons-material/ChangeHistory";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Button } from "@mui/material";
 
 function Gameboard() {
@@ -15,34 +15,18 @@ function Gameboard() {
 
 	const [questionNumber, setQuestionNumber] = useState(0);
 
-	const [isActive, setIsActive] = useState([false, false, false, false]);
-
-	const [buttonClick, setButtonClick] = useState([false, false, false, false]);
+	const [selectedIndex, setSelectedIndex] = useState(-1);
 
 	const [noOfCorrectQuestion, setNoOfCorrectQuestion] = useState(0);
 
 	const [totalNoOfQuestion, setTotalNoOfQuestion] = useState();
 
-	let randomIndexes = {
-		0: "option_1",
-		1: "option_2",
-		2: "option_3",
-		3: "answer",
-
-		// classes
-		classes: {
-			option_1: "answer",
-			option_2: "answer",
-			option_3: "answer",
-			answer: "answer option-3",
-		},
-		clickClasses: {
-			option_1: "answer option-incorrect",
-			option_2: "answer option-incorrect",
-			option_3: "answer option-incorrect",
-			answer: "answer option-3",
-		},
-	};
+	const [answerOrder, setAnswerOrder] = useState([
+		"answer",
+		"option_1",
+		"option_2",
+		"option_3",
+	]);
 
 	async function getQuestions() {
 		let res = await fetch("http://localhost:3100/api/questions");
@@ -51,167 +35,122 @@ function Gameboard() {
 		setAllQuestions([...data]);
 
 		setTotalNoOfQuestion(data.length);
-
-
-
 	}
 
-	function generateRandomIndexes (){
-
-		let cri = randomIndexes;
-
-		for(let i = 0; i < 4; i++){
-			let rand1 = Math.floor(Math.random() * 4);
-
-			let temp = cri[`${rand1}`];
-
-			cri[`${rand1}`] = cri[`${i}`];
-			cri[`${i}`] = temp;
-		}
-
-		randomIndexes = cri;
-	}
-
-	generateRandomIndexes();
-
-
-	function handleAnswerClick(optionSelected, status) {
-		console.log(optionSelected);
-		if (buttonClick.includes(true) !== true) {
-			if (status) {
-				isActive[optionSelected] = true;
-				setIsActive([...isActive]);
-				buttonClick[optionSelected] = true;
-
+	function handleAnswerClick(index) {
+		console.log(index);
+		if (selectedIndex === -1) {
+			if (answerOrder[index] === "answer") {
 				setNoOfCorrectQuestion(noOfCorrectQuestion + 1);
-
-				setButtonClick([...buttonClick]);
-			} else {
-				buttonClick[optionSelected] = true;
-				setButtonClick([...buttonClick]);
 			}
+			setSelectedIndex(index);
 		}
 	}
 
+	const shuffleAnswers = useCallback(() => {
+		let newArray = answerOrder;
+
+		for (let i = newArray.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			const temp = newArray[i];
+			newArray[i] = newArray[j];
+			newArray[j] = temp;
+		}
+
+		setAnswerOrder(newArray);
+	}, [answerOrder]);
 
 	useEffect(() => {
 		getQuestions();
+		shuffleAnswers();
+	}, [shuffleAnswers]);
 
-	},[]);
+	const setClassName = (index) => {
+		let className = "";
 
-
-
-	{
-		if(questionNumber == totalNoOfQuestion){
-			return (
-				<div>
-					<FinalScore totalQuestion={totalNoOfQuestion} correctQuestion={noOfCorrectQuestion} />
-				</div>
-			);
-		} else {
-			return (
-				<div className="quiz-container">
-					<div className="question-container">
-						{allQuestions[questionNumber]?.question_text}
-					</div>
-
-					<div className="answers-container">
-						<div
-							onClick={() => handleAnswerClick(0, false)}
-							className={
-								isActive[0]
-									? randomIndexes.classes[randomIndexes["0"]]
-									: "answer"
-							}
-							className={
-								buttonClick[0]
-									? randomIndexes.clickClasses[randomIndexes["0"]]
-									: "answer"
-							}
-						>
-							<RadioButtonUncheckedIcon />
-							<div>{allQuestions[questionNumber]?.[randomIndexes["0"]]}</div>
-						</div>
-
-						<div
-							onClick={() => handleAnswerClick(1, false)}
-							className="answer"
-							className={
-								isActive[1]
-									? randomIndexes.classes[randomIndexes["1"]]
-									: "answer"
-							}
-							className={
-								buttonClick[1]
-									? randomIndexes.clickClasses[randomIndexes["1"]]
-									: "answer"
-							}
-						>
-							<CropDinIcon />
-							<div>{allQuestions[questionNumber]?.[randomIndexes["1"]]}</div>
-						</div>
-
-						<div
-							onClick={() => handleAnswerClick(2, false)}
-							className="answer"
-							className={
-								isActive[2]
-									? randomIndexes.classes[randomIndexes["2"]]
-									: "answer"
-							}
-							className={
-								buttonClick[2]
-									? randomIndexes.clickClasses[randomIndexes["2"]]
-									: "answer"
-							}
-						>
-							<ChangeHistoryIcon />
-							<div>{allQuestions[questionNumber]?.[randomIndexes["2"]]}</div>
-						</div>
-
-						<div
-							onClick={() => handleAnswerClick(3, true)}
-							className="answer"
-							className={
-								isActive[3]
-									? randomIndexes.classes[randomIndexes["3"]]
-									: "answer"
-							}
-							className={
-								buttonClick[3]
-									? randomIndexes.clickClasses[randomIndexes["3"]]
-									: "answer"
-							}
-						>
-							<StarBorderIcon />
-							<div>{allQuestions[questionNumber]?.[randomIndexes["3"]]}</div>
-						</div>
-
-						<Button
-							className="bt"
-							onClick={() => {
-								setQuestionNumber(questionNumber + 1);
-
-								setIsActive([false, false, false, false]);
-								setButtonClick([false, false, false, false]);
-
-							}}
-							color="primary"
-							variant="contained"
-						>
-							Next
-						</Button>
-					</div>
-				</div>
-			);
+		if (selectedIndex !== -1) {
+			className +=
+				answerOrder[index] === "answer"
+					? " option-correct"
+					: " option-incorrect";
 		}
+
+		if (selectedIndex === index) {
+			className += " selected-answer";
+		}
+
+		return className;
+	};
+
+	if (questionNumber === totalNoOfQuestion) {
+		return (
+			<div>
+				<FinalScore
+					totalQuestion={totalNoOfQuestion}
+					correctQuestion={noOfCorrectQuestion}
+				/>
+			</div>
+		);
+	} else {
+		return (
+			<>
+				{allQuestions[questionNumber] ? (
+					<div className="quiz-container">
+						<div className="question-container">
+							{allQuestions[questionNumber]["question_text"]}
+						</div>
+
+						<div className="answers-container">
+							<div
+								onClick={() => handleAnswerClick(0)}
+								className={`answer ${setClassName(0)}`}
+							>
+								<RadioButtonUncheckedIcon />
+								<div>{allQuestions[questionNumber][answerOrder["0"]]}</div>
+							</div>
+
+							<div
+								onClick={() => handleAnswerClick(1)}
+								className={`answer ${setClassName(1)}`}
+							>
+								<CropDinIcon />
+								<div>{allQuestions[questionNumber][answerOrder["1"]]}</div>
+							</div>
+
+							<div
+								onClick={() => handleAnswerClick(2)}
+								className={`answer ${setClassName(2)}`}
+							>
+								<ChangeHistoryIcon />
+								<div>{allQuestions[questionNumber][answerOrder["2"]]}</div>
+							</div>
+
+							<div
+								onClick={() => handleAnswerClick(3)}
+								className={`answer ${setClassName(3)}`}
+							>
+								<StarBorderIcon />
+								<div>{allQuestions[questionNumber][answerOrder["3"]]}</div>
+							</div>
+
+							<Button
+								className="bt"
+								onClick={() => {
+									setQuestionNumber(questionNumber + 1);
+									setSelectedIndex(-1);
+									shuffleAnswers();
+								}}
+								color="primary"
+								variant="contained"
+							>
+								Next
+							</Button>
+						</div>
+					</div>
+				) : null}
+			</>
+		);
 	}
-
-
-
-
-
-
 }
 
 export default Gameboard;
