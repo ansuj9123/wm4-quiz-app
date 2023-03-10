@@ -2,14 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./finalscore.css";
 
-function FinalScore() {
+function FinalScore({ totalQuestion,correctQuestion }) {
   return (
 		<div className="final-scores">
 			<div className="score-container">
 				<div className="score">
-					<p>Score</p>
+					<p>Score Total</p>
+					<p>{correctQuestion}</p>
 					<p>
-                        score total
+                        Total Question
+					</p>
+					<p>
+						{totalQuestion}
 					</p>
 				</div>
 				<div className="return-to-quiz">
