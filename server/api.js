@@ -126,5 +126,18 @@ router.get("/quiz", async (req, res) => {
 	});
 });
 
-
+router.get("/questions", async (req, res) => {
+	jwt.verify(req.token, secret, async (err, authData) => {
+		if (err) {
+			res.sendStatus(403);
+		} else {
+			try {
+				const allQuestions = await db.query("SELECT * FROM questions");
+				res.json(allQuestions.rows);
+			} catch (err) {
+				logger.error(err.message);
+			}
+		}
+	});
+});
 export default router;
