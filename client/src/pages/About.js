@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import "./about.css";
 
@@ -7,9 +5,7 @@ import "./about.css";
 function About() {
 	return (
 		<div>
-			{/* <Sidebar />
-		<TeacherCreateQuiz /> */}
-			<h4>
+			<h4 className="hHome">
 				About <span style={{ color: "red" }}>CodeYourFuture</span> quiz app
 			</h4>
 
