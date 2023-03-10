@@ -111,5 +111,20 @@ router.post(
 	}
 );
 
+router.get("/quiz", async (req, res) => {
+	jwt.verify(req.token, secret, async (err, authData) => {
+		if (err) {
+			res.sendStatus(403);
+		} else {
+			try {
+				const allQuiz = await db.query("SELECT * FROM quiz");
+				res.json(allQuiz.rows);
+			} catch (err) {
+				logger.error(err.message);
+			}
+		}
+	});
+});
+
 
 export default router;
