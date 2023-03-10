@@ -11,6 +11,9 @@ import Sidebar from "./Sidebar";
 function Home() {
 	return (
 		<div className="home">
+			<h4>
+				Welcome to <span style={{ color: "red" }}>CodeYourFuture</span> Quiz App
+			</h4>
 			<Cards />
 			<Sidebar />
 

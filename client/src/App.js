@@ -8,6 +8,7 @@ import SignUp from "./pages/SignUp";
 import Gameboard from "./pages/Gameboard";
 import Success from "./pages/Success";
 import Login from "./pages/Login";
+import Student from "./pages/Student";
 
 function App() {
 	return (
@@ -26,6 +27,7 @@ function App() {
 				{/* <Route exact path="/Quizzes" element={<Quizzes />}></Route> */}
 
 				<Route exact path="/Gameboard" element={<Gameboard />}></Route>
+				<Route exact path="/Student" element={<Student />}></Route>
 				<Route exact path="/success" element={<Success />}></Route>
 				<Route exact path="/SignUp" element={<SignUp />}></Route>
 			</Routes>
