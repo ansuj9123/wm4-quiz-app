@@ -47,6 +47,7 @@ function Gameboard() {
 		}
 	}
 
+	
 	const shuffleAnswers = useCallback(() => {
 		let newArray = answerOrder;
 
