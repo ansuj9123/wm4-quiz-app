@@ -23,9 +23,9 @@ function Gameboard() {
 
 	const [answerOrder, setAnswerOrder] = useState([
 		"answer",
-		"opt1",
-		"opt2",
-		"opt3",
+		"option_1",
+		"option_2",
+		"option_3",
 	]);
 
 	async function getQuestions() {

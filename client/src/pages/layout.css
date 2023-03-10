@@ -1,0 +1,14 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gridMain-container{
+ background-color: #318cef;
+ margin: auto;
+ padding-top: 25px;
+ padding-left: 40px;
+}
+
