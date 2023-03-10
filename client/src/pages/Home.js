@@ -7,6 +7,7 @@ import Sidebar from "./Sidebar";
 
 
 
+
 function Home() {
 	return (
 		<div className="home">
@@ -15,6 +16,7 @@ function Home() {
 			</h4>
 			<Cards />
 			<Sidebar />
+
 
 
 
