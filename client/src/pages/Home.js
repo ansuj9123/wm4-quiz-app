@@ -1,7 +1,7 @@
 import Cards from "./Cards";
 import React from "react";
 import Sidebar from "./Sidebar";
-import "./home.css";
+import "./Home.css";
 
 
 function Home() {
