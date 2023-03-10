@@ -9,7 +9,7 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 height: 75px;
-background-color: #101f33;
+background-color: #318CE7;
 color: white;
 }
 
@@ -18,6 +18,7 @@ color: white;
   }
   
 .logo{
+	margin-right: 6rem;
     line-height: 1.02;
     font-size: 13px;
     font-family: "Cormorant";
@@ -40,10 +41,12 @@ width: 75%;
 .signup{
 text-decoration: none;
 color: white;
-font-size: 20px;
-padding: 86px 20px;
-margin: 0 10px;
+font-size: 18px;
+padding: 1px 20px;
+margin: 0 0px;
 cursor: pointer;
+font-family: "Cormorant";
+/* background-color: #89CFF0; */
 }
 
 /* .mobile-menu-icon{
@@ -52,11 +55,13 @@ cursor: pointer;
 
 /* MEDIA QUERY */
  @media screen and (max-width: 780px) {
-    .log{
-        display: flex;
-        position: absolute;
-        top: 15px;
-        left: 25px;
+    .logo{
+		margin-right: 6rem;
+		line-height: 1.02;
+		font-size: 13px;
+		font-family: "Cormorant";
+		width: 4rem;
+		text-align: center;
     }
 } 
 
