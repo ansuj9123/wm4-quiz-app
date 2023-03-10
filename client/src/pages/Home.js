@@ -1,6 +1,7 @@
 import Cards from "./Cards";
 import React from "react";
 import Sidebar from "./Sidebar";
+import Gameboard from "./Gameboard";
 
 
 
@@ -16,6 +17,7 @@ function Home() {
 			</h4>
 			<Cards />
 			<Sidebar />
+			<Gameboard />
 
 
 
