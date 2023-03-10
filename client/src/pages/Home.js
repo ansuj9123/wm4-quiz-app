@@ -2,6 +2,12 @@ import Cards from "./Cards";
 import React from "react";
 import Sidebar from "./Sidebar";
 import "./Home.css";
+import Layout from "./Layout";
+import Footer from "./Footer";
+
+
+
+
 
 function Home() {
 	return (
@@ -11,6 +17,8 @@ function Home() {
 			</h4>
 			<Cards />
 			<Sidebar />
+			<Layout />
+			<Footer />
 		</div>
 	);
 }
