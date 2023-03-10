@@ -12,8 +12,10 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
+import { useNavigate } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./login.css";
+
 
 
 function Copyright(props) {
@@ -115,7 +117,7 @@ export default function SignInSide() {
 								control={<Checkbox value="remember" color="primary" />}
 								label="Remember me"
 							/>
-							<Link to="/Quizzes" variant="contained" sx={{ mt: 3, mb: 2 }}>
+							<Link to="/Student" variant="contained" sx={{ mt: 3, mb: 2 }}>
 								Sign In
 							</Link>
 							<Grid container>
