@@ -1,41 +1,14 @@
-.card-container{
-    margin-top: 90px;
-    margin-left: 7px;
-}
-.grid-item{
-    background-color: #EAEFF1;
-}
-.link{
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px;
-    margin-bottom: 30px;
-    display: flex;
-  
-    box-shadow: black;
-    background-color: #101F33;
-    text-decoration: none;
-    color: white;
-}
-.css-l039rx-MuiDrawer-docked .MuiDrawer-paper{
-    margin-top: 4.6rem;
-    position: absolute;
-    width: 172px !important;
-}
-.cardOne, .cardTwo, .cardThree {
-    display:grid;
-  width: 52%;
-  margin-left: 35%;
-  /* margin-right: 30px; */
-  padding: 20px;
-  height: 85%;
-}
-/* .thePaper {
-} */
-.card-container {
-    display: flex;
-    justify-content: space-between;
+  .cardContainer {
+	padding-bottom: 100px;
+	padding-left: 11rem;
+	gap: 70px;
   }
-  .card-container .grid-item {
-    margin: 0 1rem; /* Adjust the value as needed */
+
+  .button .MuiButtonBase-root .MuiButton-root .MuiButton-contained .MuiButton-containedPrimary .MuiButton-sizeLarge .MuiButton-containedSizeLarge .MuiButton-root .MuiButton-contained .MuiButton-containedPrimary .MuiButton-sizeLarge .MuiButton-containedSizeLarge .css-jh47zj-MuiButtonBase-root-MuiButton-root{
+	color: black;
+  }
+
+  .btn-click{
+    text-decoration: none;
+    color: black;
   }
