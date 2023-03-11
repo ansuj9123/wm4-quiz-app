@@ -17,11 +17,8 @@ function Home() {
 			</h4>
 			<Cards />
 			<Sidebar />
-
-
-
-
-
+			<Layout />
+			<Footer />
 		</div>
 	);
 }
