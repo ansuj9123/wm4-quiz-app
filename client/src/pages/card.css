@@ -7,3 +7,8 @@
   .button .MuiButtonBase-root .MuiButton-root .MuiButton-contained .MuiButton-containedPrimary .MuiButton-sizeLarge .MuiButton-containedSizeLarge .MuiButton-root .MuiButton-contained .MuiButton-containedPrimary .MuiButton-sizeLarge .MuiButton-containedSizeLarge .css-jh47zj-MuiButtonBase-root-MuiButton-root{
 	color: black;
   }
+
+  .btn-click{
+    text-decoration: none;
+    color: black;
+  }
