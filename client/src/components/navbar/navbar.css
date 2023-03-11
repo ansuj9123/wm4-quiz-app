@@ -40,7 +40,7 @@ width: 75%;
 .Login,
 .signup{
 text-decoration: none;
-color: white;
+color: rgb(0, 0, 0);
 font-size: 18px;
 padding: 1px 20px;
 margin: 0 0px;
