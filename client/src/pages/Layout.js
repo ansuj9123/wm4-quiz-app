@@ -17,17 +17,17 @@ function Layout() {
 							/>
 							<CardContent>
 								<Typography gutterBottom variant="h5" component="div">
-									Lizard
+									Studying
 								</Typography>
 								<Typography variant="body2" color="text.secondary">
-									Lizards are a widespread group of squamate reptiles, with over
-									6,000 species, ranging across all continents except Antarctica
+									Engaging group and distance learning for teachers and
+									students.
 								</Typography>
 							</CardContent>
 						</CardActionArea>
 						<CardActions>
 							<Button variant="contained" size="large" color="primary">
-                                View Quiz
+								Explore
 							</Button>
 						</CardActions>
 					</Card>
@@ -44,17 +44,17 @@ function Layout() {
 							/>
 							<CardContent>
 								<Typography gutterBottom variant="h5" component="div">
-									Lizard
+									Research
 								</Typography>
 								<Typography variant="body2" color="text.secondary">
-									Lizards are a widespread group of squamate reptiles, with over
-									6,000 species, ranging across all continents except Antarctica
+									Explore content and join one of the world’s largest educator
+									communities.
 								</Typography>
 							</CardContent>
 						</CardActionArea>
 						<CardActions>
 							<Button variant="contained" size="large" color="primary">
-								view Quiz
+								EXPLORE
 							</Button>
 						</CardActions>
 					</Card>
@@ -71,17 +71,16 @@ function Layout() {
 							/>
 							<CardContent>
 								<Typography gutterBottom variant="h5" component="div">
-									Lizard
+									Collaboration
 								</Typography>
 								<Typography variant="body2" color="text.secondary">
-									Lizards are a widespread group of squamate reptiles, with over
-									6,000 species, ranging across all continents except Antarctica
+									Learning Apps and games for family fun or home study.
 								</Typography>
 							</CardContent>
 						</CardActionArea>
 						<CardActions>
 							<Button variant="contained" size="large" color="primary">
-								Start Quiz
+								EXPLORE
 							</Button>
 						</CardActions>
 					</Card>
@@ -98,23 +97,22 @@ function Layout() {
 							/>
 							<CardContent>
 								<Typography gutterBottom variant="h5" component="div">
-									Lizard
+									Training
 								</Typography>
 								<Typography variant="body2" color="text.secondary">
-									Lizards are a widespread group of squamate reptiles, with over
-									6,000 species, ranging across all continents except Antarctica
+									Deliver training, presentations, meetings and events in-person
 								</Typography>
 							</CardContent>
 						</CardActionArea>
 						<CardActions>
 							<Button variant="contained" size="large" color="primary">
-								Create
+								EXPLORE
 							</Button>
 						</CardActions>
 					</Card>
 				</Grid>
 
-				<Grid item={3} md={2.4} lg={3}>
+				{/* <Grid item={3} md={2.4} lg={3}>
 					<Card sx={{ maxWidth: 345 }}>
 						<CardActionArea>
 							<CardMedia
@@ -139,9 +137,9 @@ function Layout() {
 							</Button>
 						</CardActions>
 					</Card>
-				</Grid>
+				</Grid> */}
 
-				<Grid item={3} md={2.4} lg={3}>
+				{/* <Grid item={3} md={2.4} lg={3}>
 					<Card sx={{ maxWidth: 345 }}>
 						<CardActionArea>
 							<CardMedia
@@ -166,9 +164,9 @@ function Layout() {
 							</Button>
 						</CardActions>
 					</Card>
-				</Grid>
+				</Grid> */}
 
-				<Grid item={3} md={2.4} lg={3}>
+				{/* <Grid item={3} md={2.4} lg={3}>
 					<Card sx={{ maxWidth: 345 }}>
 						<CardActionArea>
 							<CardMedia
@@ -193,9 +191,9 @@ function Layout() {
 							</Button>
 						</CardActions>
 					</Card>
-				</Grid>
+				</Grid> */}
 
-				<Grid item={3} md={2.4} lg={3}>
+				{/* <Grid item={3} md={2.4} lg={3}>
 					<Card sx={{ maxWidth: 345 }}>
 						<CardActionArea>
 							<CardMedia
@@ -220,7 +218,7 @@ function Layout() {
 							</Button>
 						</CardActions>
 					</Card>
-				</Grid>
+				</Grid> */}
 			</Grid>
 		</div>
 	);
