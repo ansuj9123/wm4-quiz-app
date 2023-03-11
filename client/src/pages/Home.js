@@ -1,9 +1,9 @@
 import Cards from "./Cards";
 import React from "react";
 import Sidebar from "./Sidebar";
-import Gameboard from "./Gameboard";
-
-
+import "./Home.css";
+import Layout from "./Layout";
+import Footer from "./Footer";
 
 
 
@@ -11,13 +11,12 @@ import Gameboard from "./Gameboard";
 
 function Home() {
 	return (
-		<div className="home">
-			<h4>
+		<div className="theHome">
+			<h4 className="hTitle">
 				Welcome to <span style={{ color: "red" }}>CodeYourFuture</span> Quiz App
 			</h4>
 			<Cards />
 			<Sidebar />
-			<Gameboard />
 
 
 

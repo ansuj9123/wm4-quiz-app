@@ -8,12 +8,11 @@ import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
 import { Grid } from "@mui/material";
 import "./card.css";
-
 export default function MediaCard() {
 	return (
 		<Grid container className="card-container">
 			<Grid item xs={12} sm={4} md={4} className="gird-item">
-				<paper>
+				<paper className="thePaper">
 					<Card className="cardOne" sx={{ maxWidth: 345 }}>
 						<CardMedia
 							sx={{ height: 140 }}
@@ -33,15 +32,14 @@ export default function MediaCard() {
 						<CardActions>
 							<Button size="small">Share</Button>
 							<Link to="/Login" className="link">
-								Login in
+								Login
 							</Link>
 						</CardActions>
 					</Card>
 				</paper>
 			</Grid>
-
 			<Grid item xs={12} sm={4} md={4}>
-				<paper>
+				<paper className="thePaper">
 					<Card className="cardTwo" sx={{ maxWidth: 345 }}>
 						<CardMedia
 							sx={{ height: 140 }}
@@ -66,9 +64,8 @@ export default function MediaCard() {
 					</Card>
 				</paper>
 			</Grid>
-
 			<Grid item xs={12} sm={4} md={4}>
-				<paper>
+				<paper className="thePaper">
 					<Card className="cardThree" sx={{ maxWidth: 345 }}>
 						<CardMedia
 							sx={{ height: 140 }}
@@ -87,7 +84,7 @@ export default function MediaCard() {
 						<CardActions>
 							<Button size="small">Share</Button>
 							<Link to="/Login" size="small" className="link">
-								Login in
+								Login
 							</Link>
 						</CardActions>
 					</Card>

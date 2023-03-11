@@ -1,19 +1,19 @@
 .card-container{
     margin-top: 90px;
     margin-left: 7px;
-   
 }
-
 .grid-item{
-    background-color: #eaeff1;
+    background-color: #EAEFF1;
 }
-
 .link{
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px;
+    margin-bottom: 30px;
+    display: flex;
+  
     box-shadow: black;
-    background-color: #101f33;
+    background-color: #101F33;
     text-decoration: none;
     color: white;
 }
@@ -22,32 +22,20 @@
     position: absolute;
     width: 172px !important;
 }
-
 .cardOne, .cardTwo, .cardThree {
     display:grid;
-  width: 57%;
+  width: 52%;
   margin-left: 35%;
   /* margin-right: 30px; */
   padding: 20px;
   height: 85%;
 }
-
- 
-/* .cardOne {
-}
-
-.cardTwo {
-    
-}
-
-.cardThree {
+/* .thePaper {
 } */
-
 .card-container {
     display: flex;
     justify-content: space-between;
   }
-  
   .card-container .grid-item {
     margin: 0 1rem; /* Adjust the value as needed */
   }
