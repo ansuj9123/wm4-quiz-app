@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import "./layout.css";
 
@@ -27,7 +28,9 @@ function Layout() {
 						</CardActionArea>
 						<CardActions>
 							<Button variant="contained" size="large" color="primary">
-								Explore
+								<Link className="explore-btn" to="/About">
+									Explore
+								</Link>
 							</Button>
 						</CardActions>
 					</Card>
@@ -54,7 +57,9 @@ function Layout() {
 						</CardActionArea>
 						<CardActions>
 							<Button variant="contained" size="large" color="primary">
-								EXPLORE
+								<Link className="explore-btn" to="/About">
+									Explore
+								</Link>
 							</Button>
 						</CardActions>
 					</Card>
@@ -80,7 +85,9 @@ function Layout() {
 						</CardActionArea>
 						<CardActions>
 							<Button variant="contained" size="large" color="primary">
-								EXPLORE
+								<Link className="explore-btn" to="/About">
+									Explore
+								</Link>
 							</Button>
 						</CardActions>
 					</Card>
@@ -106,7 +113,9 @@ function Layout() {
 						</CardActionArea>
 						<CardActions>
 							<Button variant="contained" size="large" color="primary">
-								EXPLORE
+								<Link className="explore-btn" to="/About">
+									Explore
+								</Link>
 							</Button>
 						</CardActions>
 					</Card>
