@@ -14,7 +14,7 @@ export default function BasicButtons() {
 				<ul className="links">
 					<li className="basic-item">
 						<Link to="/StartQuiz" className="basic">
-            <strong>Category: </strong>JacaScript
+            <strong>Category: </strong>JavaScript
             <KeyboardArrowDownIcon style={{ marginBottom: "-11px", marginLeft: "8rem", fontSize: "2rem" }} />
 						</Link>
 					</li>
