@@ -11,6 +11,7 @@ function ContactUs() {
 			<MenthorDashboard />
 		</div>
 	);
+
 }
 
 export default ContactUs;
