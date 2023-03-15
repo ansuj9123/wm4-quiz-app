@@ -1,16 +1,16 @@
 import React from "react";
-import Sidebar from "./Sidebar";
+// import Sidebar from "./Sidebar";
 import MenthorDashboard from "./MenthorDashboard";
-import StartQuiz from "./StartQuiz";
-import Student from "./Student";
+import ContactUsForm from "./ContactUsForm";
+// import Student from "./Student";
 
 function ContactUs() {
 	return (
 		<div>
-			<Sidebar />
-			<Student />
+			{/* <Sidebar /> */}
+			{/* <Student /> */}
 			<MenthorDashboard />
-			<StartQuiz />
+			<ContactUsForm />
 		</div>
 	);
 }

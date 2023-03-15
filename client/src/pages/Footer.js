@@ -18,7 +18,7 @@ const Footer = () =>{
 				<Grid container direction="column" alignItems="center">
 					<Grid item xs={12}>
 						<Typography color="black" variant="h5">
-							Code Your Future
+						<h3 ><span className="code">&lt; Code &gt;</span> Your Future</h3>
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
