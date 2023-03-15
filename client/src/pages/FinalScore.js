@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./finalscore.css";
 
+
 function FinalScore({ totalQuestion,correctQuestion }) {
   return (
 		<div className="final-scores">
@@ -17,11 +18,11 @@ function FinalScore({ totalQuestion,correctQuestion }) {
 					</p>
 				</div>
 				<div className="return-to-quiz">
-					<Link>
+					<Link to="/StartQuiz" >
 						<h6>Return to Quiz List</h6>
 					</Link>
 					<br></br>
-					<Link>
+					<Link to="/">
 						<h6>Return HomePage</h6>
 					</Link>
 				</div>

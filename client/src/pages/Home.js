@@ -4,10 +4,6 @@ import "./Home.css";
 import Layout from "./Layout";
 import Footer from "./Footer";
 
-
-
-
-
 function Home() {
 	return (
 		<div className="theHome">
