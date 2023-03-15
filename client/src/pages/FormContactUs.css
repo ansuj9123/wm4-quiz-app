@@ -1,0 +1,55 @@
+/* label {
+    display: flex;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    justify-items: center;
+
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    padding-top: 20px;
+    display: block;
+    width: 30rem;
+    padding: 12px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    justify-items: center;
+  }
+  
+  input[type='text']::placeholder,
+  input[type='email']::placeholder,
+  textarea::placeholder {
+    font-size: 16px;
+
+  }
+  
+  button[type='submit'] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #318CE7;
+  }
+  
+  .theForm {
+    padding-top: 6rem;
+    display: grid;
+    justify-items: center;
+    /* width: 40rem; */
+  /* }
+  .theMessage {
+    height: 7rem;
+  }  */
